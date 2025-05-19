@@ -3,8 +3,13 @@
 # Unity files
 *.meta -text -merge=unityamlmerge
 *.unity -text -merge=unityamlmerge
-*.asset -text -merge=unityamlmerge
+#*.asset -text -merge=unityamlmerge
 *.prefab -text -merge=unityamlmerge
+
+# LFS for large files
+*.asset filter=lfs diff=lfs merge=lfs -text
+*.cubemap filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
 
 # Image formats
 *.psd filter=lfs diff=lfs merge=lfs -text
